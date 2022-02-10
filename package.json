@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "multer": "^2.0.0-rc.1",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    
+    "deploy": "firebase deploy --only functions",
+    "start": "node index.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix essentiel_app && npm run build --prefix essentiel_app"
+
+   
+  },
+ 
+  "optionalDependencies": {
+    "fsevents": "2.1.2"
+  },
+  "engines": {
+"node": "8.1.1",
+"npm": "5.0.3"
+}
+
+
+}
+
